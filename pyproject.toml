@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kvault"
+version = "1.0.0"
+description = "A Redis-compatible in-memory data store in pure Python — zero dependencies."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Deepesh", email = "deepeshhh1@users.noreply.github.com" }]
+requires-python = ">=3.10"
+keywords = ["redis", "resp", "key-value", "database", "in-memory"]
+
+[project.scripts]
+kvault = "kvault.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["kvault*"]
